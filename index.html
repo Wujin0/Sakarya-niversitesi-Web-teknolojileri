@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SAMSUN</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="anasayfa.html">Anasayfa</a></li>
+            <li><a href="özgeçmiş.html">Özgeçmiş</a></li>
+            <li><a href="şehrim.html">Şehrim</a></li>
+            <li><a href="mirasımız.html">Mirasımız</a></li>
+            <li><a href="takımımız.html">Takımımız</a></li>
+            <li><a href="ilgi alanları.html">İlgi Alanlarım</a></li>
+            <li><a href="giriş.html">Giriş Yap</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    
+
+
+    <div class="container">
+        <h1>Hakkımda</h1>
+        <div class="info">
+            <img src="resim.jpg" alt="Profil Resmi">
+            <div class="text">
+                <h2>Adınız Soyadınız</h2>
+                <p>Kısa bir hakkımda yazısı...</p>
+                <button onclick="showLongInfo()">Daha Fazla Oku</button>
+            </div>
+        </div>
+        <div class="long-info" id="longInfo">
+            <p>Uzun bir hakkımda yazısı...</p>
+        </div>
+    </div>
+    <script>
+        function showLongInfo() {
+            var longInfo = document.getElementById("longInfo");
+            if (longInfo.style.display === "none") {
+                longInfo.style.display = "block";
+                window.scrollTo({ top: longInfo.offsetTop, behavior: 'smooth' });
+            } else {
+                longInfo.style.display = "none";
+            }
+        }
+    </script>
+
+    
+    <main>
+        <!-- Slider -->
+        <div class="slider">
+            <!-- Slider içeriği buraya gelecek -->
+        </div>
+
+       
+
+
+
+        
+        <section>
+            <h2>İletişim</h2>
+            <form id="contact-form" action="submit.php" method="POST">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Mesajınız:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                <button type="submit">Gönder</button>
+                <button type="reset">Temizle</button>
+            </form>
+        </section>
+        
+    </main>
+    <!-- Footer -->
+    <footer>
+        &copy; 
+    </footer>
+
+    <!-- JavaScript ve JS Frameworkleri -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
