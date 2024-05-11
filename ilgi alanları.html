@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ilgi Alanlarım</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    ilgi alanları girilecek
+    <!-- Navbar -->
+    
+    
+    <!--  css de ayrı classlar oluşturup onların içne yaz unutma -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="takimimiz.html">Takımımız</a></li>
+            <li><a href="ilgialanlari.html">Ilgi Alanlarım</a></li>
+            <li><a href="giris.html">Giriş Yap</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ilgi Alanları Bölümü -->
+    <div class="interests-container">
+        <h1>Ilgi Alanlarım</h1>
+        <div class="interest">
+            <h2>Bisiklet Sürmek</h2>
+            <p>Bisiklet sürmeyi seviyorum ve hafta sonları genellikle doğa yürüyüşleri yapıyorum.</p>
+            <button class="read-more-btn" onclick="showMore(this)">Daha Fazla Oku</button>
+            <div class="more-info">
+                <p>Detaylı bilgi: Bisiklet sürmeyi seviyorum. Doğada geçirdiğim zamanlar benim için çok değerli...</p>
+            </div>
+        </div>
+        <div class="interest">
+            <h2>Resim Çizmek</h2>
+            <p>Boş zamanlarımda resim çizmeye meraklıyım, özellikle yağlı boya çalışmaları yapıyorum.</p>
+            <button class="read-more-btn" onclick="showMore(this)">Daha Fazla Oku</button>
+            <div class="more-info">
+                <p>Detaylı bilgi: Sanatla ilgilenmek beni mutlu ediyor. Her resim bir hikaye anlatır...</p>
+            </div>
+        </div>
+        <div class="interest">
+            <h2>Kitap Okumak</h2>
+            <p>Felsefe, bilim kurgu ve tarih kitaplarını okumak benim için büyük bir zevktir.</p>
+            <button class="read-more-btn" onclick="showMore(this)">Daha Fazla Oku</button>
+            <div class="more-info">
+                <p>Detaylı bilgi: Kitaplarla içsel bir yolculuk yapıyorum. Okudukça dünyalar keşfediyorum...</p>
+            </div>
+        </div>
+        <div class="interest">
+            <h2>Yoga ve Meditasyon</h2>
+            <p>Ruh ve beden sağlığıma önem veriyor, düzenli olarak yoga ve meditasyon yapıyorum.</p>
+            <button class="read-more-btn" onclick="showMore(this)">Daha Fazla Oku</button>
+            <div class="more-info">
+                <p>Detaylı bilgi: Yoga ve meditasyon benim için bir yaşam tarzı. Her sabah meditasyon yaparak...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Kişisel Web Sitesi
+    </footer>
+
+    <!-- JavaScript ve JS Frameworkleri -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function showMore(btn) {
+            var moreInfo = btn.nextElementSibling;
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+                btn.textContent = "Daha Az Göster";
+            } else {
+                moreInfo.style.display = "none";
+                btn.textContent = "Daha Fazla Oku";
+            }
+        }
+    </script>
 </body>
 </html>

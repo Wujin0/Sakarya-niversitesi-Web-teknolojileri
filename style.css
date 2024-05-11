@@ -57,3 +57,182 @@ h1 {
     font-size: 16px;
     line-height: 1.6;
 }
+/*fotoğraf için*/
+
+/* styles.css */
+
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Fotoğraf çerçeve stili */
+.info {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    border: 4px solid #fff; /* Beyaz bir çerçeve */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+/* Daha fazla oku butonu stil */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Uzun bilgi stil */
+.long-info {
+    display: none;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.long-info p {
+    line-height: 1.6;
+}
+
+
+/* style.css */
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Giriş Yap Butonu */
+nav ul li:last-child {
+    float: right;
+}
+
+nav ul li:last-child a {
+    background-color: #4CAF50;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #45a049;
+}
+/* arka plan*/
+/* style.css */
+
+/* Genel stil */
+body.arkaplan1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('arkaplan.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+body.arkaplan2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* iletişim kısmı tasarımı*/
+/* İletişim kısmı için güncellenmiş CSS kodları */
+section {
+    max-height: 25vh; /* Ekran yüksekliğinin dörtte biri kadar */
+    overflow-y: auto; /* İçerik aştığında dikey kaydırma çubuğu */
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    color: #333; /* Yazı rengi */
+    font-size: 16px; /* Yazı boyutu */
+}
+
+label {
+    font-weight: bold; /* Kalın yazı stil */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px; /* Giriş kutularının yazı boyutu */
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px;
+    font-size: 16px; /* Buton yazı boyutu */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
