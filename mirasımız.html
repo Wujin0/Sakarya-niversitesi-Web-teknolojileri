@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsun Şehri</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery kütüphanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider kütüphanesi -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="özgeçmiş.html">Özgeçmiş</a></li>
+            <li><a href="şehrim.html">Şehrim</a></li>
+            <li><a href="mirasımız.html">Mirasımız</a></li>
+            <li><a href="takımımız.html">Takımımız</a></li>
+            <li><a href="ilgi alanları.html">İlgi Alanlarım</a></li>
+            <li><a href="giriş.html">Giriş Yap</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1 id="slide-title">Samsun Şehri</h1>
+        <p id="slide-info">
+            Samsun, Türkiye'nin Karadeniz'e kıyısı olan önemli bir şehridir. Tarihi boyunca çeşitli medeniyetlere ev sahipliği yapmış ve zengin bir kültürel mirasa sahiptir.
+        </p>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div><img src="arkaplan.jpeg" alt="Samsun 1"></div>
+            <div><img src="arkaplan.jpeg" alt="Samsun 2"></div>
+            <div><img src="arkaplan.jpeg" alt="Samsun 3"></div>
+            <!-- Resim dosyalarını kendi dosya adlarına ve uzantılarına göre güncellemen gerekebilir -->
+        </div>
+    </div>
+
+    <!-- Slick Slider kütüphanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 5000, // 5 saniye aralıklarla slaytları otomatik geçiş yap
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>',
+                // Slayt değiştiğinde bilgilerin değişmesi için beforeChange event'ini kullan
+                // Slayt değiştiğinde çalışacak fonksiyon
+                beforeChange: function(event, slick, currentSlide, nextSlide){
+                    changeSlideInfo(nextSlide);
+                }
+            });
+
+            // Slayt değiştikçe bilgilerin değişmesini sağlayan fonksiyon
+            function changeSlideInfo(slideIndex){
+                const slideTitles = ['Samsun 1', 'Samsun 2', 'Samsun 3'];
+                const slideInfos = [
+                    'Samsun, Türkiye\'nin Karadeniz\'e kıyısı olan önemli bir şehridir. Tarihi boyunca çeşitli medeniyetlere ev sahipliği yapmış ve zengin bir kültürel mirasa sahiptir.',
+                    'Samsun\'un doğal güzellikleri ve kültürel zenginlikleri turistleri cezbetmektedir. Yöresel yemekler, halk oyunları ve el sanatları şehrin geleneksel özelliklerindendir.',
+                    'Samsun, Atatürk\'ün Türkiye Cumhuriyeti\'ni kurma yolundaki önemli adımlarından biri olan 19 Mayıs 1919\'da başlattığı Milli Mücadele\'nin başlangıç noktasıdır.'
+                ];
+
+                $('#slide-title').text(slideTitles[slideIndex]);
+                $('#slide-info').text(slideInfos[slideIndex]);
+            }
+        });
+    </script>
+</body>
+</html>
