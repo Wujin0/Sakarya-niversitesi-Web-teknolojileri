@@ -6,14 +6,14 @@
     <title> Kişisel Web Sitesi</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body-default">
     <!-- Header -->
-    <header>
+    <header class="header">
         <h1>SAMSUN</h1>
     </header>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Anasayfa</a></li>
             <li><a href="özgeçmiş.html">Özgeçmiş</a></li>
@@ -27,23 +27,21 @@
     </nav>
 
     <!-- Main Content -->
-    
-
-
     <div class="container">
         <h1>Hakkımda</h1>
         <div class="info">
-            <img src="Ekran görüntüsü 2024-02-24 020559.png" alt="">
+            <img src="Ekran görüntüsü 2024-02-24 020559.png" alt="Profile Picture">
             <div class="text">
                 <h2>ERTUĞRUL KABAOĞLU</h2>
                 <p>merhaba ben sakarya üniversitesi öğrecisi ertuğrul burada seni fazla sıkmak istemiyorum benim hakkımda daha fazla öğrenmek için butona tıkla</p>
-                <button onclick="showLongInfo()">Daha Fazla Oku</button>
+                <button class="button-default" onclick="showLongInfo()">Daha Fazla Oku</button>
             </div>
         </div>
         <div class="long-info" id="longInfo">
             <p>Uzun bir hakkımda yazısı...</p>
         </div>
     </div>
+    
     <script>
         function showLongInfo() {
             var longInfo = document.getElementById("longInfo");
@@ -55,20 +53,14 @@
             }
         }
     </script>
-
     
     <main>
         <!-- Slider -->
         <div class="slider">
             <!-- Slider içeriği buraya gelecek -->
         </div>
-
-       
-
-
-
         
-        <section>
+        <section class="section-contact">
             <h2>İletişim</h2>
             <form id="contact-form" action="submit.php" method="POST">
                 <label for="name">Adınız:</label>
@@ -77,15 +69,15 @@
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="message">Mesajınız:</label><br>
                 <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
-                <button type="submit">Gönder</button>
-                <button type="reset">Temizle</button>
+                <button class="button-default" type="submit">Gönder</button>
+                <button class="button-default" type="reset">Temizle</button>
             </form>
         </section>
-        
     </main>
+
     <!-- Footer -->
-    <footer>
-        &copy; 
+    <footer class="footer">
+        &copy; 2024 Ertuğrul Kabaoğlu
     </footer>
 
     <!-- JavaScript ve JS Frameworkleri -->

@@ -1,5 +1,5 @@
 /* Genel stil */
-body {
+.body-default {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     align-items: center;
 }
 
-img {
+.info img {
     border-radius: 50%;
     border: 4px solid #fff; /* Beyaz bir çerçeve */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
@@ -25,12 +25,12 @@ img {
     margin-right: 20px;
 }
 
-.text {
+.info .text {
     flex: 1;
 }
 
 /* Daha fazla oku butonu stil */
-button {
+.button-default {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -39,7 +39,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button-default:hover {
     background-color: #0056b3;
 }
 
@@ -56,7 +56,7 @@ button:hover {
 }
 
 /* Navbar */
-nav ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -64,11 +64,11 @@ nav ul {
     background-color: #333;
 }
 
-nav ul li {
+.navbar ul li {
     float: left;
 }
 
-nav ul li a {
+.navbar ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -76,32 +76,32 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     background-color: #111;
 }
 
 /* Giriş Yap Butonu */
-nav ul li:last-child {
+.navbar ul li.last-child {
     float: right;
 }
 
-nav ul li:last-child a {
+.navbar ul li.last-child a {
     background-color: #4CAF50;
 }
 
-nav ul li:last-child a:hover {
+.navbar ul li.last-child a:hover {
     background-color: #45a049;
 }
 
 /* Arka plan */
-body.arkaplan1 {
+.body-arkaplan1 {
     background-image: url('arkaplan.jpeg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 }
 
-body.arkaplan2 {
+.body-arkaplan2 {
     background-image: url('');
     background-size: cover; 
     background-position: center; 
@@ -109,7 +109,7 @@ body.arkaplan2 {
 }
 
 /* İletişim kısmı tasarımı */
-section {
+.section-contact {
     max-height: 25vh; /* Ekran yüksekliğinin dörtte biri kadar */
     overflow-y: auto; /* İçerik aştığında dikey kaydırma çubuğu */
     background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
@@ -120,13 +120,13 @@ section {
     font-size: 16px; /* Yazı boyutu */
 }
 
-label {
+.section-contact label {
     font-weight: bold; /* Kalın yazı stil */
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.section-contact input[type="text"],
+.section-contact input[type="email"],
+.section-contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -136,8 +136,8 @@ textarea {
     font-size: 14px; /* Giriş kutularının yazı boyutu */
 }
 
-button[type="submit"],
-button[type="reset"] {
+.section-contact button[type="submit"],
+.section-contact button[type="reset"] {
     padding: 10px 20px;
     font-size: 16px; /* Buton yazı boyutu */
     background-color: #007bff;
@@ -148,66 +148,62 @@ button[type="reset"] {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.section-contact button:hover {
     background-color: #0056b3;
 }
 
-
-
-/* cvcss */
-
-
-body {
+/* CV stil */
+.body-cv {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-header {
+.header-cv {
     background: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-nav {
+.nav-cv {
     background: #444;
     padding: 10px 0;
     text-align: center;
 }
 
-nav ul {
+.nav-cv ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+.nav-cv ul li {
     display: inline;
     margin: 0 10px;
 }
 
-nav ul li a {
+.nav-cv ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-section {
+.section-cv {
     padding: 20px;
     margin: 20px;
     background: #f4f4f4;
 }
 
-h2 {
+.section-cv h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
 
-.job, .school {
+.section-cv .job, .section-cv .school {
     margin-bottom: 20px;
 }
 
-footer {
+.footer-cv {
     background: #333;
     color: #fff;
     text-align: center;
