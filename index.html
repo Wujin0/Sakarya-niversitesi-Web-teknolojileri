@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kişisel Web Sitesi</title>
+    <title>Kişisel Web Sitesi</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar {
+            text-align: center;
+        }
+    </style>
 </head>
 <body class="body-default">
     <!-- Header -->
     <header class="header">
-        <h1>SAMSUN</h1>
+        <!-- <h1>SAMSUN</h1> -->
     </header>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Anasayfa</a></li>
-            <li><a href="özgeçmiş.html">Özgeçmiş</a></li>
-            <li><a href="şehrim.html">Şehrim</a></li>
-            <li><a href="mirasımız.html">Mirasımız</a></li>
-            <li><a href="takımımız.html">Takımımız</a></li>
-            <li><a href="ilgi alanları.html">İlgi Alanlarım</a></li>
-            <li><a href="giriş.html">Giriş Yap</a></li>
-            <li><a href="iletişim.html">İletişim</a></li>
-        </ul>
-    </nav>
+    <body class="body-cv">
+        <nav class="nav-cv">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="özgeçmiş.html">Özgeçmiş</a></li>
+                <li><a href="şehrim.html">Şehrim</a></li>
+                <li><a href="mirasımız.html">Mirasımız</a></li>
+              
+                <li><a href="ilgi alanları.html">İlgi Alanlarım</a></li>
+                <li><a href="giriş.html">Giriş Yap</a></li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </nav>
 
     <!-- Main Content -->
     <div class="container">
@@ -33,47 +39,30 @@
             <img src="Ekran görüntüsü 2024-02-24 020559.png" alt="Profile Picture">
             <div class="text">
                 <h2>ERTUĞRUL KABAOĞLU</h2>
-                <p>merhaba ben sakarya üniversitesi öğrecisi ertuğrul burada seni fazla sıkmak istemiyorum benim hakkımda daha fazla öğrenmek için butona tıkla</p>
+                <p>Merhaba, ben Sakarya Üniversitesi öğrencisi Ertuğrul. Burada seni fazla sıkmak istemiyorum. Benim hakkımda daha fazla öğrenmek için butona tıkla.</p>
                 <button class="button-default" onclick="showLongInfo()">Daha Fazla Oku</button>
             </div>
         </div>
-        <div class="long-info" id="longInfo">
-            <p>Uzun bir hakkımda yazısı...</p>
+        <div class="long-info" id="longInfo" style="display: none;">
+            <div class="hobbies-container-hobilerim">
+                <div class="hobby-box-hobilerim" onclick="showHobbyInfo('hobby1')">Hobi 1</div>
+                <div class="hobby-box-hobilerim" onclick="showHobbyInfo('hobby2')">Hobi 2</div>
+                <div class="hobby-box-hobilerim" onclick="showHobbyInfo('hobby3')">Hobi 3</div>
+            </div>
+            <div class="hobby-info-hobilerim" id="hobby1" style="display: none;">
+                <h2>Hobi 1</h2>
+                <p>Hobi 1 hakkında detaylı bilgi.</p>
+            </div>
+            <div class="hobby-info-hobilerim" id="hobby2" style="display: none;">
+                <h2>Hobi 2</h2>
+                <p>Hobi 2 hakkında detaylı bilgi.</p>
+            </div>
+            <div class="hobby-info-hobilerim" id="hobby3" style="display: none;">
+                <h2>Hobi 3</h2>
+                <p>Hobi 3 hakkında detaylı bilgi.</p>
+            </div>
         </div>
     </div>
-    
-    <script>
-        function showLongInfo() {
-            var longInfo = document.getElementById("longInfo");
-            if (longInfo.style.display === "none") {
-                longInfo.style.display = "block";
-                window.scrollTo({ top: longInfo.offsetTop, behavior: 'smooth' });
-            } else {
-                longInfo.style.display = "none";
-            }
-        }
-    </script>
-    
-    <main>
-        <!-- Slider -->
-        <div class="slider">
-            <!-- Slider içeriği buraya gelecek -->
-        </div>
-        
-        <section class="section-contact">
-            <h2>İletişim</h2>
-            <form id="contact-form" action="submit.php" method="POST">
-                <label for="name">Adınız:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">E-posta Adresiniz:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Mesajınız:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
-                <button class="button-default" type="submit">Gönder</button>
-                <button class="button-default" type="reset">Temizle</button>
-            </form>
-        </section>
-    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -84,5 +73,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        function showLongInfo() {
+            document.getElementById('longInfo').style.display = 'block';
+        }
+
+        function showHobbyInfo(hobbyId) {
+            var hobbies = document.getElementsByClassName('hobby-info-hobilerim');
+            for (var i = 0; i < hobbies.length; i++) {
+                hobbies[i].style.display = 'none';
+            }
+            document.getElementById(hobbyId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

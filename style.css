@@ -1,6 +1,11 @@
 /* Genel stil */
 .body-default {
     font-family: Arial, sans-serif;
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); /* Buraya arka plan resminizin dosya yolunu ekleyin */
+    background-size: cover; /* Arka plan resmini kaplayacak şekilde ayarlayın */
+    background-position: center; /* Arka plan resminin ortalanmasını sağlayın */
+    background-attachment: fixed; /* Arka plan resminin sayfa ile kaymasını engelleyin */
+    color: #333;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +36,7 @@
 
 /* Daha fazla oku butonu stil */
 .button-default {
-    background-color: #007bff;
+    background-color: #ff5500;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -155,7 +160,10 @@
 /* CV Genel Stil */
 .body-cv {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Siyah arka plan */
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); /* Buraya arka plan resminizin dosya yolunu ekleyin */
+    background-size: cover; /* Arka plan resmini kaplayacak şekilde ayarlayın */
+    background-position: center; /* Arka plan resminin ortalanmasını sağlayın */
+    background-attachment: fixed; /* Arka plan resminin sayfa ile kaymasını engelleyin */
     color: #fff; /* Beyaz metin rengi */
     margin: 0;
     padding: 0;
@@ -230,4 +238,135 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
     max-width: 150px;
     margin-right: 20px;
+}
+
+.hobbies-container-hobilerim {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobby-box-hobilerim {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hobby-box-hobilerim:hover {
+    background-color: #e0e0e0;
+}
+
+.hobby-info-hobilerim {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Arka plan rengi */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* ilgi alanları*/
+
+.body-İA {
+    font-family: Arial, sans-serif;
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); /* Buraya arka plan resminizin dosya yolunu ekleyin */
+    background-size: cover; /* Arka plan resmini kaplayacak şekilde ayarlayın */
+    background-position: center; /* Arka plan resminin ortalanmasını sağlayın */
+    background-attachment: fixed; /* Arka plan resminin sayfa ile kaymasını engelleyin */
+    color: #171717; /* Beyaz metin rengi */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/*slider*/
+
+.content-container-mirasımız {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.slider-container-mirasımız {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-mirasımız {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-mirasımız img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-mirasımız {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Slider Ok Butonları */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+/* Slider Başlık ve Bilgi */
+#slide-title,
+#slide-info {
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Slider Slayt Bilgi Kutusu */
+.slider-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Slayt başlığı */
+#slide-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Slayt bilgi metni */
+#slide-info {
+    font-size: 16px;
+    line-height: 1.6;
 }

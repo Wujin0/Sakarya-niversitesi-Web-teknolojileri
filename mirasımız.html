@@ -11,29 +11,29 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
-<body>
-    <nav>
+<body class="body-İA">
+    <nav class="nav-cv">
         <ul>
             <li><a href="index.html">Anasayfa</a></li>
             <li><a href="özgeçmiş.html">Özgeçmiş</a></li>
             <li><a href="şehrim.html">Şehrim</a></li>
             <li><a href="mirasımız.html">Mirasımız</a></li>
-            <li><a href="takımımız.html">Takımımız</a></li>
+            
             <li><a href="ilgi alanları.html">İlgi Alanlarım</a></li>
             <li><a href="giriş.html">Giriş Yap</a></li>
             <li><a href="iletişim.html">İletişim</a></li>
         </ul>
     </nav>
 
-    <div class="content">
+    <div class="content-container-mirasımız">
         <h1 id="slide-title">Samsun Şehri</h1>
         <p id="slide-info">
             Samsun, Türkiye'nin Karadeniz'e kıyısı olan önemli bir şehridir. Tarihi boyunca çeşitli medeniyetlere ev sahipliği yapmış ve zengin bir kültürel mirasa sahiptir.
         </p>
     </div>
 
-    <div class="slider-container">
-        <div class="slider">
+    <div class="slider-container-mirasımız">
+        <div class="slider-mirasımız">
             <div><img src="arkaplan.jpeg" alt="Samsun 1"></div>
             <div><img src="arkaplan.jpeg" alt="Samsun 2"></div>
             <div><img src="arkaplan.jpeg" alt="Samsun 3"></div>
@@ -46,7 +46,7 @@
 
     <script>
         $(document).ready(function(){
-            $('.slider').slick({
+            $('.slider-mirasımız').slick({
                 autoplay: true,
                 autoplaySpeed: 5000, // 5 saniye aralıklarla slaytları otomatik geçiş yap
                 arrows: true,
@@ -73,5 +73,9 @@
             }
         });
     </script>
+
+    <footer class="footer-mirasımız">
+        &copy; 2024 Ertuğrul Kabaoğlu
+    </footer>
 </body>
 </html>
