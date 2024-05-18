@@ -247,18 +247,20 @@
 }
 
 .hobby-box-hobilerim {
-    background-color: #f0f0f0;
+    background-color: #d7490ca8;
+    color: white;
     padding: 10px;
     border: 1px solid #ccc;
     width: 150px;
     text-align: center;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgeli efekt */
+    transition: box-shadow 0.3s; /* Gölgeli efektin animasyonu */
 }
 
-.hobby-box-hobilerim:hover {
-    background-color: #e0e0e0;
+.button-default:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover olduğunda daha belirgin bir gölgeli efekt */
 }
-
 .hobby-info-hobilerim {
     margin-top: 20px;
     padding: 10px;
@@ -329,7 +331,7 @@
     transform: translateY(-50%);
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: #000000;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -352,7 +354,7 @@
 
 /* Slider Slayt Bilgi Kutusu */
 .slider-info {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(241, 5, 5, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -369,4 +371,90 @@
 #slide-info {
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* giriş css i */
+body.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main.login {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+h1.login {
+    color: #4CAF50;
+}
+
+label.login {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+
+input.login {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button.login {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+}
+
+.wrap.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* slider ayarı*/
+
+.carousel-inner {
+    width: 100%;
+    max-width: 100x; /* İstediğiniz genişliği burada belirleyebilirsiniz */
+    height: auto; /* Otomatik yükseklik */
+ 
+        border-radius: 10px; /* Slider içeriğinin kenarlarını yuvarlatır */
+        overflow: hidden; /* İçeriğin taşan kısımlarını gizler */
+    
+}
+
+.carousel-item {
+    text-align: center; /* İçeriği merkezlemek için */
+}
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
 }

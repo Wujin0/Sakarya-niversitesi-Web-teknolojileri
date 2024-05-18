@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Login Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS dosyanızı burada çağırın -->
+</head>
+<body class="login"> <!-- "login" class'ını body elementine ekleyin -->
+    <div class="main login"> <!-- "login" class'ını main div ve içindeki elementlere ekleyin -->
+        <h1 class="login">Benim Sitem</h1> <!-- "login" class'ını h1 elementine ekleyin -->
+        <h3 class="login">lütfen giriş bilgilerini girin</h3> <!-- "login" class'ını h3 elementine ekleyin -->
+        <form action="">
+            <label for="first" class="login"> <!-- "login" class'ını label elementlerine ekleyin -->
+                Kullanıcı adı
+            </label>
+            <input type="text" 
+                   id="first"
+                   name="first" 
+                   placeholder="kullanıcı adınızı girin" required
+                   class="login"> <!-- "login" class'ını input elementine ekleyin -->
+
+            <label for="password" class="login"> <!-- "login" class'ını label elementlerine ekleyin -->
+                Şifre:
+            </label>
+            <input type="password"
+                   id="password" 
+                   name="password" 
+                   placeholder="şifrenizi girin" required
+                   class="login"> <!-- "login" class'ını input elementine ekleyin -->
+
+            <div class="wrap login"> <!-- "login" class'ını wrap div ve içindeki elementlere ekleyin -->
+                <button type="submit"
+                        onclick="solve()"
+                        class="login"> <!-- "login" class'ını button elementine ekleyin -->
+                    Giriş yap
+                </button>
+            </div>
+        </form>
+        <p class="login">Üye değilsen
+            <a href="#" 
+               style="text-decoration: none;">
+                Üye ol
+            </a>
+        </p>
+    </div>
+</body>
+</html>
