@@ -1,14 +1,15 @@
 /* Genel stil */
 .body-default {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-image: url('../images/siyah arkaplan.png'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
-    color: #333;
+    color: #191818;
     margin: 0;
     padding: 0;
 }
+
 
 .container {
     max-width: 1200px;
@@ -35,7 +36,7 @@
 }
 
 /* Daha fazla oku butonu stil */
-.button-default {
+.button-default1 {
     background-color: #ff5500;
     color: #fff;
     border: none;
@@ -100,7 +101,7 @@
 
 /* Arka plan */
 .body-arkaplan1 {
-    background-image: url('arkaplan.jpeg');
+    background-image: url('images/arkaplan.jpeg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -115,7 +116,7 @@
 
 /* İletişim kısmı tasarımı */
 .section-contact {
-    max-height: 25vh; 
+    max-height: 1031px; 
     overflow-y: auto;
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
@@ -160,7 +161,7 @@
 /* CV Genel Stil */
 .body-cv {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-image: url('images/DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
     background-position: center; 
     background-attachment: fixed;
     color: #fff; 
@@ -281,7 +282,7 @@
 
 .body-İA {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-image: url('../images/DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
@@ -460,7 +461,7 @@ button.login {
 /*iletişim css*/
 .body-cv1 {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-image: url('images/DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 

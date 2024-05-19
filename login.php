@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Kullanıcı adı ve şifreyi kontrol edin
     if ($username === 'g231210376@sakarya.edu.tr' && $password === 'g231210376') {
-        // Kullanıcıyı index.html sayfasına yönlendirin
-        header('Location: index.html');
+        // Başarılı giriş durumunda kullanıcıyı index.html sayfasına yönlendirin
+        header('Location: index.html?username=' . urlencode($username));
         exit; // Yönlendirmeden sonra scripti sonlandırın
     } else {
         // Başarısız giriş durumunda kullanıcıyı login sayfasına geri yönlendirin
