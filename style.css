@@ -1,10 +1,10 @@
 /* Genel stil */
 .body-default {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); /* Buraya arka plan resminizin dosya yolunu ekleyin */
-    background-size: cover; /* Arka plan resmini kaplayacak şekilde ayarlayın */
-    background-position: center; /* Arka plan resminin ortalanmasını sağlayın */
-    background-attachment: fixed; /* Arka plan resminin sayfa ile kaymasını engelleyin */
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
     color: #333;
     margin: 0;
     padding: 0;
@@ -24,8 +24,8 @@
 
 .info img {
     border-radius: 50%;
-    border: 4px solid #fff; /* Beyaz bir çerçeve */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    border: 4px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 200px;
     margin-right: 20px;
 }
@@ -115,18 +115,18 @@
 
 /* İletişim kısmı tasarımı */
 .section-contact {
-    max-height: 25vh; /* Ekran yüksekliğinin dörtte biri kadar */
-    overflow-y: auto; /* İçerik aştığında dikey kaydırma çubuğu */
-    background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+    max-height: 25vh; 
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-    color: #333; /* Yazı rengi */
-    font-size: 16px; /* Yazı boyutu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    color: #333; 
+    font-size: 16px; 
 }
 
 .section-contact label {
-    font-weight: bold; /* Kalın yazı stil */
+    font-weight: bold; 
 }
 
 .section-contact input[type="text"],
@@ -138,13 +138,13 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 14px; /* Giriş kutularının yazı boyutu */
+    font-size: 14px; 
 }
 
 .section-contact button[type="submit"],
 .section-contact button[type="reset"] {
     padding: 10px 20px;
-    font-size: 16px; /* Buton yazı boyutu */
+    font-size: 16px; 
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -160,25 +160,24 @@
 /* CV Genel Stil */
 .body-cv {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); /* Buraya arka plan resminizin dosya yolunu ekleyin */
-    background-size: cover; /* Arka plan resmini kaplayacak şekilde ayarlayın */
-    background-position: center; /* Arka plan resminin ortalanmasını sağlayın */
-    background-attachment: fixed; /* Arka plan resminin sayfa ile kaymasını engelleyin */
-    color: #fff; /* Beyaz metin rengi */
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-position: center; 
+    background-attachment: fixed;
+    color: #fff; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 .header-cv {
-    background-color: #333; /* Koyu gri arka plan */
-    color: #fff; /* Beyaz metin rengi */
+    background-color: #333; 
+    color: #fff; 
     padding: 20px 0;
     text-align: center;
 }
 
 .nav-cv {
-    background-color: #444; /* Orta gri arka plan */
+    background-color: #444; 
     padding: 10px 0;
     text-align: center;
 }
@@ -195,21 +194,21 @@
 }
 
 .nav-cv ul li a {
-    color: #fff; /* Beyaz metin rengi */
+    color: #fff; 
     text-decoration: none;
 }
 
 .section-cv {
     padding: 20px;
     margin: 20px;
-    background-color: #1a1a1a; /* Çok koyu gri arka plan */
+    background-color: #1a1a1a; 
     border-radius: 8px;
 }
 
 .section-cv h2 {
-    border-bottom: 2px solid #333; /* Koyu gri alt çizgi */
+    border-bottom: 2px solid #333; 
     padding-bottom: 10px;
-    color: #fff; /* Beyaz metin rengi */
+    color: #fff; 
 }
 
 .section-cv .job, .section-cv .school {
@@ -217,8 +216,8 @@
 }
 
 .footer-cv {
-    background-color: #333; /* Koyu gri arka plan */
-    color: #fff; /* Beyaz metin rengi */
+    background-color: #333; 
+    color: #fff; 
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -234,8 +233,8 @@
 
 .profile-photo {
     border-radius: 50%;
-    border: 4px solid #fff; /* Beyaz çerçeve */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    border: 4px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     max-width: 150px;
     margin-right: 20px;
 }
@@ -254,12 +253,12 @@
     width: 150px;
     text-align: center;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgeli efekt */
-    transition: box-shadow 0.3s; /* Gölgeli efektin animasyonu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s; 
 }
 
 .button-default:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover olduğunda daha belirgin bir gölgeli efekt */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 .hobby-info-hobilerim {
     margin-top: 20px;
@@ -273,7 +272,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #333; /* Arka plan rengi */
+    background-color: #333; 
     color: white;
     text-align: center;
     padding: 10px;
@@ -282,11 +281,11 @@
 
 .body-İA {
     font-family: Arial, sans-serif;
-    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); /* Buraya arka plan resminizin dosya yolunu ekleyin */
-    background-size: cover; /* Arka plan resmini kaplayacak şekilde ayarlayın */
-    background-position: center; /* Arka plan resminin ortalanmasını sağlayın */
-    background-attachment: fixed; /* Arka plan resminin sayfa ile kaymasını engelleyin */
-    color: #171717; /* Beyaz metin rengi */
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #171717; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -443,18 +442,88 @@ button.login {
 
 .carousel-inner {
     width: 100%;
-    max-width: 100x; /* İstediğiniz genişliği burada belirleyebilirsiniz */
-    height: auto; /* Otomatik yükseklik */
+    max-width: 100x; 
+    height: auto; 
  
-        border-radius: 10px; /* Slider içeriğinin kenarlarını yuvarlatır */
-        overflow: hidden; /* İçeriğin taşan kısımlarını gizler */
+        border-radius: 10px; 
+        overflow: hidden; 
     
 }
 
 .carousel-item {
-    text-align: center; /* İçeriği merkezlemek için */
+    text-align: center; 
 }
 .carousel-item img {
     display: block;
     margin: 0 auto;
 }
+/*iletişim css*/
+.body-cv1 {
+    font-family: Arial, sans-serif;
+    background-image: url('DESIGNSYNDROME-PAPERCUT-TEXTURE---TRANSPARENT90.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #000000; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.form-container label {
+    display: block;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+}
+
+
+/* api css */
+
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.interest {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+.interest h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.interest img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-height: 300px; 
+}
+.button-default {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-default:hover {
+    background-color: #0056b3;
+}
+
+/*mirasımız*/
+

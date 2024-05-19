@@ -4,35 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Login Form</title>
-    <link rel="stylesheet" href="style.css"> <!-- CSS dosyanızı burada çağırın -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-<body class="login"> <!-- "login" class'ını body elementine ekleyin -->
-    <div class="main login"> <!-- "login" class'ını main div ve içindeki elementlere ekleyin -->
-        <h1 class="login">Benim Sitem</h1> <!-- "login" class'ını h1 elementine ekleyin -->
-        <h3 class="login">lütfen giriş bilgilerini girin</h3> <!-- "login" class'ını h3 elementine ekleyin -->
-        <form action="">
-            <label for="first" class="login"> <!-- "login" class'ını label elementlerine ekleyin -->
+<body class="login">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kişisel Web Sitesi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="özgeçmiş.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="şehrim.html">Şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mirasımız.html">Mirasımız</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ilgi alanları.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="giriş.html">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletişim.html">İletişim</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+    
+    <div class="main login">
+        <h1 class="login">Benim Sitem</h1>
+        <h3 class="login">Lütfen giriş bilgilerini girin</h3>
+        <form action="login.php" method="POST">
+            <label for="username" class="login">
                 Kullanıcı adı
             </label>
             <input type="text" 
-                   id="first"
-                   name="first" 
-                   placeholder="kullanıcı adınızı girin" required
-                   class="login"> <!-- "login" class'ını input elementine ekleyin -->
+                   id="username"
+                   name="username" 
+                   placeholder="Kullanıcı adınızı girin" required
+                   class="login">
 
-            <label for="password" class="login"> <!-- "login" class'ını label elementlerine ekleyin -->
+            <label for="password" class="login">
                 Şifre:
             </label>
             <input type="password"
                    id="password" 
                    name="password" 
-                   placeholder="şifrenizi girin" required
-                   class="login"> <!-- "login" class'ını input elementine ekleyin -->
+                   placeholder="Şifrenizi girin" required
+                   class="login">
 
-            <div class="wrap login"> <!-- "login" class'ını wrap div ve içindeki elementlere ekleyin -->
-                <button type="submit"
-                        onclick="solve()"
-                        class="login"> <!-- "login" class'ını button elementine ekleyin -->
+            <div class="wrap login">
+                <button type="submit" class="login">
                     Giriş yap
                 </button>
             </div>
@@ -44,5 +78,8 @@
             </a>
         </p>
     </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
